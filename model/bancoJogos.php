@@ -11,12 +11,35 @@ function inserirJogo($conexao, $jogo, $tamanho, $preco, $requisitos, $console, $
 function listaTudoJogos($conexao)
 {
     $query = "Select * From tbjogos";
-    $resultados = mysqli_query($conexao,$query);
+    $resultados = mysqli_query($conexao, $query);
     return $resultados;
 }
-function listaTudoJogosCod($conexao,$codJogo)
+
+function listaTudoJogosCod($conexao, $codJogo)
 {
-    $query = "Select * Form tbjogos where codJog={$codJogo}";
-    $resultados = mysqli_query($conexao,$codJogo);
+    $query = "Select * From tbjogos where codJog={$codJogo}";
+    $resultados = mysqli_query($conexao, $query);
+    $resul = mysqli_fetch_array($resultados);
+    return $resul;
+}
+
+function alterarJogos($conexao, $codJog, $nomeJog, $tamanhoJog, $precoJog, $requisitosJog, $consoleJog, $classificacaoJog, $avaliacaoJog)
+{
+    $query = "update tbjogos set nomeJog = '{$nomeJog}',
+    tamanhoJog='{$tamanhoJog}',
+    precoJog='{$precoJog}',
+    requisitosJog='{$requisitosJog}',
+    consoleJog='{$consoleJog}',
+    classificacaoJog='{$classificacaoJog}',
+    avaliacaoJog='{$avaliacaoJog}' where codjog='{$codJog}' ";
+    $resultados = mysqli_query($conexao, $query);
     return $resultados;
 }
+
+function deletarJogos($conexao,$codJog){
+    $query="delete from tbjogos where codJog = '{$codJog}'";
+    $resultados= mysqli_query($conexao,$query);
+    return $resultados;
+}
+
+

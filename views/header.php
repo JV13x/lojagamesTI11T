@@ -16,7 +16,7 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Planet Games</a>
+                <a class="navbar-brand" href="../views/index.php">Planet Games</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,12 +28,12 @@
                                 Usuarios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Cadastro</a></li>
-                                <li><a class="dropdown-item" href="#">Visualizar</a></li>
+                                <li><a class="dropdown-item" href="../views/cadastroUsuarios.php">Cadastro</a></li>
+                                <li><a class="dropdown-item" href="../views/listaTudoUsuarios.php">Visualizar</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Busca por Código</a></li>
+                                <li><a class="dropdown-item" href="../views/listaTudoUsuariosCod.php">Busca por Código</a></li>
                             </ul>
                         </li>
 
@@ -42,12 +42,12 @@
                                 Jogos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="cadastroJogos.php">Cadastro</a></li>
-                                <li><a class="dropdown-item" href="listaTudoJogos.php">Visualizar Tudo</a></li>
+                                <li><a class="dropdown-item" href="../views/cadastroJogos.php">Cadastro</a></li>
+                                <li><a class="dropdown-item" href="../views/listaTudoJogos.php">Visualizar Tudo</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Busca por Código</a></li>
+                                <li><a class="dropdown-item" href="../views/listaTudoJogosCod.php">Busca por Código</a></li>
                             </ul>
                         </li>
 
@@ -56,12 +56,13 @@
                                 Cliente
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Cadastro</a></li>
-                                <li><a class="dropdown-item" href="#">Visualizar</a></li>
+                                <li><a class="dropdown-item" href="../views/cadastroCliente.php">Cadastro</a></li>
+                                <li><a class="dropdown-item" href="../views/listaTudoCliente.php">Visualizar</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Busca por Código</a></li>
+                                <li><a class="dropdown-item" href="../views/listaTudoClienteCod.php">Busca por Código</a></li>
+                                <li><a class="dropdown-item" href="../views/listaTudoClienteNome.php">Busca por nome</a></li>
                             </ul>
                         </li>
 
